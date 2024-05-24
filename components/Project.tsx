@@ -22,16 +22,16 @@ export default function Project({
     tags?: Array<string>
 }) {
     return (
-        <article className="no-padding h-[33.5em]">
+        <article className="no-padding md:w-[20em] w-[17em] h-[30.5em] md:h-[33.5em]">
             {
                 img ? (
                     <img className={"responsive large " + primary + (padImage ? " p-4" : "")} src={img} />
                 ) : ""
             }
-            <div className="padding flex flex-col justify-evenly h-[15em]">
+            <div className="padding flex flex-col justify-evenly h-[12em] md:h-[15em]">
                 <div>
-                    <h4 className="small">{brand}</h4>
-                    <div className="flex gap-1">
+                    <h4 className="small mb-1">{brand}</h4>
+                    <div className="md:flex hidden gap-1">
                         {tags?.map(function (item, i) {
                             if (i < 3) {
                                 return (
@@ -45,11 +45,11 @@ export default function Project({
                         }
                         )}
                     </div>
-                    <p className="text-xs">{title}</p>
+                    <p className="text-xs md:my-2 my-0">{title}</p>
                 </div>
-                <nav>
+                <nav className="">
                     <a href={href ?? "/"} target="_blank">
-                        <button className="button primary">Visit</button>
+                        <button style={{margin:0}} className="button primary">Visit</button>
                     </a>
                 </nav>
             </div>

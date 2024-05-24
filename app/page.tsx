@@ -1,6 +1,8 @@
 import Project from "@/components/Project";
 import Slider from "@/components/Slider";
 import Steps from "@/components/Steps";
+import { mdiLaptopAccount } from "@mdi/js";
+import Icon from "@mdi/react";
 
 
 import "beercss";
@@ -9,30 +11,36 @@ import "material-dynamic-colors";
 
 export default function Home() {
   return (
-    <main className="pb-2">
-      <div className="container m-auto primary-container rounded-box min-h-[14em] p-4 my-8">
-        <article className="page bottom active medium middle-align center-align">
-          <div className="flex h-full flex-col items-center justify-center">
-            <i className="extra">dynamic_form</i>
-            <h3 className="large center-align">fullstack developer</h3>
-            <p>years over creating fullstack solutions built with most popular and latest technologies</p>
-            <div className="space"></div>
-            <nav className="center-align">
-              <a href="https://adenlall.vercel.app/resume-adenlall.pdf" target="_blank">
-                <button className="button">
-                  <i>download</i>
-                  download my resume
-                </button>
-              </a>
-            </nav>
-          </div>
-        </article>
-        <Steps />
+    <main className="pb-2 md:px-0 px-2">
+      <div className="container m-auto primary-container rounded-box min-h-[14em] p-4 my-8 mb-4">
+        <div className="flex md:flex-row flex-col gap-4 items-stretch justify-center">
+          <article className="page h-[23em] bottom active medium middle-align center-align md:w-1/2 w-full">
+            <div className="flex h-full flex-col md:items-start items-center justify-center">
+              {/* <i className="w-[3em] h-[3em]"><Icon path={mdiLaptopAccount} /></i> */}
+              <h1 className="md:w-min md:text-start">fullstack developer</h1>
+              <p className="md:w-fit md:text-start">Years of experience in developing full-stack solutions using the most popular and up-to-date technologies.</p>
+              <div className="space"></div>
+              <nav className="md:m-0 m-auto">
+                <a href="https://adenlall.vercel.app/resume-adenlall.pdf" target="_blank">
+                  <button className="button tertiary">
+                    <i>download</i>
+                    download my resume
+                  </button>
+                </a>
+              </nav>
+            </div>
+          </article>
+          <article className="p-0 m-0 md:w-1/2 w-full h-auto h-[23em] tertiary page bottom active medium">
+            <video className="w-full h-full object-cover" autoPlay loop preload={"auto"}>
+              <source src="https://kstatic.googleusercontent.com/files/65da8f0326427a8e71bfa678348f3fa1a4bb1660e0b013591eb3bfd9df455bd5a3334249de61229029be7d2fd7cf18d4e143728b7e0702b6bde6251a9c64511a" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </article>
+        </div>
       </div>
-
-      <div className="container primary-container rounded-box p-4 m-auto my-8">
+      <div className="container tertiary-container rounded-box p-4 m-auto mt-0">
         <h1 className="large">Projects</h1>
-        <Slider margin={20} width={'20em'} data={[
+        <Slider margin={20} width={'auto'} data={[
           <Project
             brand={"AllAcc"}
             tags={["PHP", "Laravel", "React", "Inertia", "API", "AWS", "NGINX", "Platform"]}
@@ -92,6 +100,13 @@ export default function Home() {
           />
         ]} />
       </div>
-    </main>
+
+      <div className="w-full container m-auto">
+        <div className="secondary-container md:h-[15em] h-auto px-8 my-4 mb-8 flex flex-col items-center justify-center rounded-box">
+          <Steps />
+        </div>
+      </div>
+
+    </main >
   );
 }

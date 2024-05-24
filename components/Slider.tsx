@@ -23,7 +23,7 @@ export default function Slider({ children, data, width, margin }: { children?: a
       >
         {data?.map((item: any) => (
           <>
-            <SwiperSlide key={crypto.randomUUID()} style={{ width: width ?? '13em' }}>
+            <SwiperSlide key={crypto.randomUUID()} style={{ width: width ?? '20em' }}>
               {item}
             </SwiperSlide>
           </>

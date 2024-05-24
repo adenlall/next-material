@@ -4,6 +4,8 @@ import "./globals.css";
 
 import "beercss";
 import "material-dynamic-colors";
+import Theme from "@/components/Theme";
+import Modal from "@/components/Modal";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,17 +26,26 @@ export default function RootLayout({
         <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.5.6/dist/cdn/beer.min.js"></script>
         <script type="module" src="https://cdn.jsdelivr.net/npm/material-dynamic-colors@1.1.0/dist/cdn/material-dynamic-colors.min.js"></script>
       </head>
-      <body className={"min-h-screen " + inter.className}>
+      <body className={"min-h-screen surface-container-low " + inter.className}>
+        <Modal />
         <div className="flex flex-col items-center justify-between container m-auto pt-10">
-          <nav className="w-full items-center justify-between flex">
-            <h1 className="large font-mono">adenlall</h1>
-            <div>
-              <a target="_blank" href="https://www.linkedin.com/in/janahbilal/">
-                <button className="button border">linkedin</button>
-              </a>
-              <a target="_blank" href="https://github.com/adenlall">
-                <button className="button">github</button>
-              </a>
+          <nav className="w-full md:flex-row flex-col items-center justify-between flex">
+            <h1 className="meduim">janah bilal</h1>
+            <div className="flex sm:flex-row sm:gap-0 gap-2 flex-col justify-center items-center">
+              <div>
+                <Theme />
+              </div>
+              <div>
+                <a target="_blank" href="https://www.linkedin.com/in/janahbilal/">
+                  <button className="button m-0 border">linkedin</button>
+                </a>
+                <a target="_blank" href="https://github.com/adenlall">
+                  <button className="button m-0">github</button>
+                </a>
+                <a target="_blank" href="https://github.com/adenlall">
+                  <button className="button m-0 tertiary">porfolio</button>
+                </a>
+              </div>
             </div>
           </nav>
         </div>
