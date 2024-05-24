@@ -32,15 +32,15 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "https://janahbilal.vercel.app/misc/screen.png",
+        url: "https://janahbilal.vercel.app/screen.png",
         alt: "adenlall screenshot",
       },
     ],
     id: "adenlall",
   },
   icons: {
-    icon: "https://janahbilal.vercel.app/misc/logo.png",
-    apple: "https://janahbilal.vercel.app/misc/logo.png",
+    icon: "https://janahbilal.vercel.app/logo.png",
+    apple: "https://janahbilal.vercel.app/logo.png",
   },
   robots: {
     index: true,
@@ -61,7 +61,7 @@ export const metadata = {
     description: "Hi, I'am adenlall. A Javascript/PHP Developer.",
     creator: "@adenlall",
     images: {
-      url: "https://janahbilal.vercel.app/misc/screen.png",
+      url: "https://janahbilal.vercel.app/screen.png",
       alt: "adenlall",
     },
   },
@@ -82,9 +82,9 @@ export const metadata = {
     title: "adenlall",
     statusBarStyle: "black-translucent",
     startupImage: [
-      "https://janahbilal.vercel.app/misc/logo.png",
+      "https://janahbilal.vercel.app/logo.png",
       {
-        url: "https://janahbilal.vercel.app/misc/logo.png",
+        url: "https://janahbilal.vercel.app/logo.png",
         media: "(device-width: 194px) and (device-height: 194px)",
       },
     ],
