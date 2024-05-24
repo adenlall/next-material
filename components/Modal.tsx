@@ -1,5 +1,8 @@
 "use client"
 
+import { mdiMaterialDesign } from "@mdi/js";
+import Icon from "@mdi/react";
+
 export default function Modal() {
 
     const theme = async (from: string) => {
@@ -23,7 +26,7 @@ export default function Modal() {
         > */}
         <dialog
             className="left" style={{maxWidth:'75vw', left:0}} id="mdialog">
-            <h5>Change Themes</h5>
+            <h5 className="font-bold"><Icon className="w-[1.3em] h-[1.3em] mr-2" path={mdiMaterialDesign} /> Change Themes</h5>
             <div className="flex flex-wrap gap-0 my-8">
                 <div className="w-full mb-4">
                     <h6>Dark mode</h6>
