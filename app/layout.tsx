@@ -4,7 +4,6 @@ import "./globals.css";
 
 import "beercss";
 import "material-dynamic-colors";
-import Theme from "@/components/Theme";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,11 +19,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={"min-h-screen dark " + inter.className}>
+      <body className={"min-h-screen " + inter.className}>
         <div className="flex flex-col items-center justify-between container m-auto pt-10">
           <nav className="w-full items-center justify-between flex">
             <h1 className="font-mono">adenlall</h1>
-            {/* <Theme/> */}
             <div>
               <a target="_blank" href="https://www.linkedin.com/in/janahbilal/">
                 <button className="border">linkedin</button>
