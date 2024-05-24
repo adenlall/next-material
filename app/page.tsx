@@ -2,6 +2,11 @@ import Project from "@/components/Project";
 import Slider from "@/components/Slider";
 import Steps from "@/components/Steps";
 
+
+import "beercss";
+import "material-dynamic-colors";
+
+
 export default function Home() {
   return (
     <main className="pb-2">
@@ -9,23 +14,24 @@ export default function Home() {
         <article className="page bottom active medium middle-align center-align">
           <div className="flex h-full flex-col items-center justify-center">
             <i className="extra">dynamic_form</i>
-            <h3 className="center-align">fullstack developer</h3>
+            <h3 className="large center-align">fullstack developer</h3>
             <p>years over creating fullstack solutions built with most popular and latest technologies</p>
             <div className="space"></div>
             <nav className="center-align">
               <a href="https://adenlall.vercel.app/resume-adenlall.pdf" target="_blank">
-              <button>
-                <i>download</i>
-                download my resume
-              </button>
+                <button className="button">
+                  <i>download</i>
+                  download my resume
+                </button>
               </a>
             </nav>
           </div>
         </article>
         <Steps />
       </div>
+
       <div className="container primary-container rounded-box p-4 m-auto my-8">
-        <h1>Projects</h1>
+        <h1 className="large">Projects</h1>
         <Slider margin={20} width={'20em'} data={[
           <Project
             brand={"AllAcc"}

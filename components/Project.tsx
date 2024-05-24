@@ -30,7 +30,7 @@ export default function Project({
             }
             <div className="padding flex flex-col justify-evenly h-[15em]">
                 <div>
-                    <h5>{brand}</h5>
+                    <h4 className="small">{brand}</h4>
                     <div className="flex gap-1">
                         {tags?.map(function (item, i) {
                             if (i < 3) {
@@ -49,7 +49,7 @@ export default function Project({
                 </div>
                 <nav>
                     <a href={href ?? "/"} target="_blank">
-                        <button className="primary">Visit</button>
+                        <button className="button primary">Visit</button>
                     </a>
                 </nav>
             </div>

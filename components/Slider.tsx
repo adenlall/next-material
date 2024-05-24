@@ -1,6 +1,10 @@
 "use client"
 import { Swiper, SwiperSlide } from 'swiper/react';
 
+
+import "beercss";
+import "material-dynamic-colors";
+
 import 'swiper/css';
 import 'swiper/css/effect-cards';
 

@@ -13,7 +13,7 @@ export default function Steps() {
                         <Icon path={mdiLanguagePython} />
                     </div>
                 </div>
-                <div className="max divider w-full"></div>
+                <div className="max divider w-[40%]"></div>
                 <div className="center-align">
                     <button className="circle small">
                         <i>done</i>
@@ -35,7 +35,7 @@ export default function Steps() {
                         <Icon path={mdiLanguagePhp} />
                     </div>
                 </div>
-                <div className="max divider w-full"></div>
+                <div className="max divider w-[50%]"></div>
                 <div className="center-align">
                     <button className="circle small">
                         <i>done</i>
@@ -97,7 +97,7 @@ export default function Steps() {
                         </svg>
                     </div>
                 </div>
-                <div className="max divider w-full"></div>
+                <div className="max divider w-[30%]"></div>
                 <div className="center-align">
                     <button className="circle small">
                         <Icon path={mdiCodeBraces} />
