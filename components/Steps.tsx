@@ -7,17 +7,17 @@ export default function Steps() {
                 <div className="center-align">
                     <button className="circle small">
                         <i>done</i>
-                        <div className="tooltip">2017 - Learning basic algorithms and data structures</div>
+                        <div className="tooltip right">2017 - Learning basic algorithms and data structures</div>
                     </button>
                     <div className="small-margin secondary p-1">
                         <Icon path={mdiLanguagePython} />
                     </div>
                 </div>
-                <div className="max divider w-[40%]"></div>
+                <div className="max divider secondary w-[40%]"></div>
                 <div className="center-align">
                     <button className="circle small">
                         <i>done</i>
-                        <div className="tooltip">2017 - Learning basic web technologies</div>
+                        <div className="tooltip right">2017 - Learning basic web technologies</div>
                     </button>
                     <div className="small-margin secondary p-1">
                         <svg
@@ -44,7 +44,7 @@ export default function Steps() {
                         </svg>
                     </div>
                 </div>
-                <div className="max divider w-full"></div>
+                <div className="max divider secondary w-full"></div>
                 <div className="center-align">
                     <button className="circle small">
                         <i>done</i>
@@ -56,7 +56,7 @@ export default function Steps() {
                         </svg>
                     </div>
                 </div>
-                <div className="max divider w-[50%]"></div>
+                <div className="max divider secondary w-[50%]"></div>
                 <div className="center-align">
                     <button className="circle small">
                         <i>done</i>
@@ -70,7 +70,7 @@ export default function Steps() {
                         <Icon path={mdiDocker} />
                     </div>
                 </div>
-                <div className="max divider md:w-full invisible md:visible"></div>
+                <div className="max divider secondary md:w-full invisible md:visible"></div>
             </div>
             <div className='flex w-full'>
                 <div className="center-align">
@@ -82,7 +82,7 @@ export default function Steps() {
                         <Icon style={{ opacity: 0.8 }} path={mdiReact} />
                     </div>
                 </div>
-                <div className="max divider w-[50%]"></div>
+                <div className="max divider secondary w-[50%]"></div>
                 <div className="center-align">
                     <button className="circle small">
                         <i>done</i>
@@ -99,11 +99,11 @@ export default function Steps() {
                         </svg>
                     </div>
                 </div>
-                <div className="max divider w-full"></div>
+                <div className="max divider secondary w-full"></div>
                 <div className="center-align">
                     <button className="circle small">
                         <i>done</i>
-                        <div className="tooltip">2022 - Start descovering mobile apps with React Native and Expo</div>
+                        <div className="tooltip left">2022 - Start descovering mobile apps with React Native and Expo</div>
                     </button>
                     <div className="small-margin secondary p-1">
                         <Icon path={mdiReact} />
@@ -112,11 +112,11 @@ export default function Steps() {
                         </svg>
                     </div>
                 </div>
-                <div className="max divider w-[20%]"></div>
+                <div className="max divider secondary w-[20%]"></div>
                 <div className="center-align">
                     <button className="circle small">
                         <Icon path={mdiCodeBraces} />
-                        <div className="tooltip">2024 - Learning "Material You" UI/UX design system</div>
+                        <div className="tooltip left">2024 - Learning "Material You" UI/UX design system</div>
                     </button>
                     <div className="small-margin secondary p-1">
                         <Icon path={mdiMaterialDesign} />

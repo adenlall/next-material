@@ -1,3 +1,4 @@
+import Current from "@/components/Current";
 import Project from "@/components/Project";
 import Slider from "@/components/Slider";
 import Steps from "@/components/Steps";
@@ -21,7 +22,7 @@ export default function Home() {
               <p className="md:w-fit md:text-start">Years of experience in developing full-stack solutions using the most popular and up-to-date technologies.</p>
               <div className="space"></div>
               <nav className="md:m-0 m-auto">
-                <a href="https://adenlall.vercel.app/resume-adenlall.pdf" target="_blank">
+                <a target="_blank" href="https://adenlall.vercel.app/resume-adenlall.pdf">
                   <button className="button tertiary">
                     <i>download</i>
                     download my resume
@@ -38,6 +39,7 @@ export default function Home() {
           </article>
         </div>
       </div>
+      <Current />
       <div className="container tertiary-container rounded-box p-4 m-auto mt-0">
         <h1 className="large">Projects</h1>
         <Slider margin={20} width={'auto'} data={[
@@ -109,66 +111,59 @@ export default function Home() {
 
       <div className="container m-auto my-12">
         <div className="p-8 w-full secondary-container rounded-box flex flex-wrap gap-2">
-
-          <a className="chip secondary m-0" style={{ margin: 0 }}>
+          <a className="chip secondary m-0" style={{ margin: 0 }} href="https://reactjs.org/">
             <Icon path={mdiReact} />
             React
           </a>
-          <a className="chip secondary m-0" style={{ margin: 0 }}>
-            <svg
-              viewBox="0 0 15 15"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M4.5 4.5l.405-.293A.5.5 0 004 4.5h.5zm3 9.5A6.5 6.5 0 011 7.5H0A7.5 7.5 0 007.5 15v-1zM14 7.5A6.5 6.5 0 017.5 14v1A7.5 7.5 0 0015 7.5h-1zM7.5 1A6.5 6.5 0 0114 7.5h1A7.5 7.5 0 007.5 0v1zm0-1A7.5 7.5 0 000 7.5h1A6.5 6.5 0 017.5 1V0zM5 12V4.5H4V12h1zm-.905-7.207l6.5 9 .81-.586-6.5-9-.81.586zM10 4v6h1V4h-1z"
-              />
+          <a className="chip secondary m-0" style={{ margin: 0 }} href="https://nextjs.org/">
+            <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4.5 4.5l.405-.293A.5.5 0 004 4.5h.5zm3 9.5A6.5 6.5 0 011 7.5H0A7.5 7.5 0 007.5 15v-1zM14 7.5A6.5 6.5 0 017.5 14v1A7.5 7.5 0 0015 7.5h-1zM7.5 1A6.5 6.5 0 0114 7.5h1A7.5 7.5 0 007.5 0v1zm0-1A7.5 7.5 0 000 7.5h1A6.5 6.5 0 017.5 1V0zM5 12V4.5H4V12h1zm-.905-7.207l6.5 9 .81-.586-6.5-9-.81.586zM10 4v6h1V4h-1z" />
             </svg>
             Next
           </a>
-          <a className="chip secondary m-0" style={{ margin: 0 }}>
+          <a className="chip secondary m-0" style={{ margin: 0 }} href="https://www.php.net/">
             <Icon path={mdiLanguagePhp} />
             PHP
           </a>
-          <a className="chip secondary m-0" style={{ margin: 0 }}>
+          <a className="chip secondary m-0" style={{ margin: 0 }} href="https://www.typescriptlang.org/">
             <Icon path={mdiLanguageTypescript} />
             TypeScript
           </a>
-          <a className="chip secondary m-0" style={{ margin: 0 }}>
+          <a className="chip secondary m-0" style={{ margin: 0 }} href="https://laravel.com/">
             <Icon path={mdiLaravel} />
             Laravel
           </a>
-          <a className="chip secondary m-0" style={{ margin: 0 }}>
+          <a className="chip secondary m-0" style={{ margin: 0 }} href="https://expressjs.com/">
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path d="M24 18.588a1.529 1.529 0 01-1.895-.72l-3.45-4.771-.5-.667-4.003 5.444a1.466 1.466 0 01-1.802.708l5.158-6.92-4.798-6.251a1.595 1.595 0 011.9.666l3.576 4.83 3.596-4.81a1.435 1.435 0 011.788-.668L21.708 7.9l-2.522 3.283a.666.666 0 000 .994l4.804 6.412zM.002 11.576l.42-2.075c1.154-4.103 5.858-5.81 9.094-3.27 1.895 1.489 2.368 3.597 2.275 5.973H1.116C.943 16.447 4.005 19.009 7.92 17.7a4.078 4.078 0 002.582-2.876c.207-.666.548-.78 1.174-.588a5.417 5.417 0 01-2.589 3.957 6.272 6.272 0 01-7.306-.933 6.575 6.575 0 01-1.64-3.858c0-.235-.08-.455-.134-.666A88.33 88.33 0 010 11.577zm1.127-.286h9.654c-.06-3.076-2.001-5.258-4.59-5.278-2.882-.04-4.944 2.094-5.071 5.264z" />
             </svg>
             Express
           </a>
-          <a className="chip secondary m-0" style={{ margin: 0 }}>
+          <a className="chip secondary m-0" style={{ margin: 0 }} href="https://nodejs.org/">
             <Icon path={mdiNodejs} />
             Node
           </a>
-          <a className="chip secondary m-0" style={{ margin: 0 }}>
+          <a className="chip secondary m-0" style={{ margin: 0 }} href="https://tailwindcss.com/">
             <Icon path={mdiTailwind} />
             Tailwind
           </a>
-          <a className="chip secondary m-0" style={{ margin: 0 }}>
+          <a className="chip secondary m-0" style={{ margin: 0 }} href="https://vuejs.org/">
             <Icon path={mdiVuejs} />
             Vue
           </a>
-          <a className="chip secondary m-0" style={{ margin: 0 }}>
+          <a target="_blank" href="https://graphql.org/" className="chip secondary m-0" style={{ margin: 0 }}>
             <Icon path={mdiGraphql} />
             GraphQL
           </a>
-          <a className="chip secondary m-0" style={{ margin: 0 }}>
+          <a target="_blank" href="https://www.docker.com/" className="chip secondary m-0" style={{ margin: 0 }}>
             <Icon path={mdiDocker} />
             Docker
           </a>
-          <a className="chip secondary m-0" style={{ margin: 0 }}>
+          <a target="_blank" href="https://reactnative.dev/" className="chip secondary m-0" style={{ margin: 0 }}>
             <Icon path={mdiReact} />
             RN
           </a>
-          <a className="chip secondary m-0" style={{ margin: 0 }}>
+          <a target="_blank" href="https://www.postgresql.org/" className="chip secondary m-0" style={{ margin: 0 }}>
             <svg
               viewBox="-5 -8 44 44"
               xmlns="http://www.w3.org/2000/svg"
@@ -177,77 +172,73 @@ export default function Home() {
             </svg>
             PostgreSQL
           </a>
-          <a className="chip secondary m-0" style={{ margin: 0 }}>
+          <a target="_blank" href="https://www.mongodb.com/" className="chip secondary m-0" style={{ margin: 0 }}>
             <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
               <path d="M15.821 23.185s0-10.361.344-10.36c.266 0 .612 13.365.612 13.365-.476-.056-.956-2.199-.956-3.005zm6.668-10.24c-.919-4.016-2.932-7.469-5.708-10.134l-.007-.006a9.8 9.8 0 01-.895-1.732l-.024-.068.001.068c0 .565-.253 1.07-.652 1.409l-.003.002c-3.574 3.034-5.848 7.505-5.923 12.508v.013l-.001.208a15.1 15.1 0 006.07 12.115l.039.028.087.063q.241 1.784.412 3.576h.601c.166-1.491.39-2.796.683-4.076l-.046.239c.396-.275.742-.56 1.065-.869l-.003.003a14.143 14.143 0 004.549-10.404l-.001-.182v.009a16.341 16.341 0 00-.261-2.871l.015.099z" />
             </svg>
             MongoDB
           </a>
-          <a className="chip secondary m-0" style={{ margin: 0 }}>
+          <a target="_blank" href="https://expo.dev/" className="chip secondary m-0" style={{ margin: 0 }}>
             <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
               <path d="M24.292 15.547a3.927 3.927 0 004.115-3.145 2.57 2.57 0 00-2.161-1.177c-2.272-.052-3.491 2.651-1.953 4.323zm-9.177-10.85l5.359-3.104L18.766.63l-7.391 4.281.589.328 1.119.629 2.032-1.176zm6.046-3.39c.089.027.161.1.188.188l2.484 7.593a.285.285 0 01-.125.344 5.062 5.062 0 00-2.317 5.693 5.066 5.066 0 005.401 3.703.299.299 0 01.307.203l2.563 7.803a.3.3 0 01-.125.344l-7.859 4.771a.273.273 0 01-.131.036.262.262 0 01-.203-.041l-2.765-1.797a.311.311 0 01-.109-.129l-5.396-12.896-8.219 4.875c-.016.011-.037.021-.052.032a.293.293 0 01-.261-.021l-1.859-1.093a.283.283 0 01-.115-.381l7.953-15.749a.273.273 0 01.135-.131L18.615.045a.293.293 0 01.292-.005zm-8.322 5.1l-1.932-1.089-7.693 15.229 1.396.823 6.631-9.015a.281.281 0 01.271-.12.288.288 0 01.235.177l7.228 17.296 1.933 1.251-8.063-24.552zm13.406 10.557c-2.256 0-3.787-2.292-2.923-4.376.86-2.083 3.563-2.619 5.156-1.025.595.593.928 1.396.928 2.235a3.159 3.159 0 01-3.161 3.167z" />
             </svg>
             EXPO
           </a>
-          <a className="chip secondary m-0" style={{ margin: 0 }}>
+          <a target="_blank" href="https://m3.material.io/develop/web" className="chip secondary m-0" style={{ margin: 0 }}>
             <Icon path={mdiMaterialDesign} />
             Material
           </a>
-          <a className="chip secondary m-0" style={{ margin: 0 }}>
+          <a target="_blank" href="https://daisyui.com/" className="chip secondary m-0" style={{ margin: 0 }}>
             <Icon path={mdiPalette} />
             DaisyUI
           </a>
-          <a className="chip secondary m-0" style={{ margin: 0 }}>
-            <svg
-              viewBox="0 0 500 500"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
+          <a target="_blank" href="https://inertiajs.com/" className="chip secondary m-0" style={{ margin: 0 }}>
+            <svg viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width={500} height={500} rx={250} fill="url(#paint0_linear)" />
               <path d="M184 165H95l86 86-86 86h89l86-86-86-86z" />
               <path d="M318.5 165h-89l86 86-86 86h89l86-86-86-86z" />
             </svg>
             Inertia
           </a>
-          <a className="chip secondary m-0" style={{ margin: 0 }}>
+          <a target="_blank" href="https://www.gtk.org/" className="chip secondary m-0" style={{ margin: 0 }}>
             <Icon path={mdiLaptop} />
             GTK
           </a>
-          <a className="chip secondary m-0" style={{ margin: 0 }}>
+          <a target="_blank" href="https://www.debian.org/" className="chip secondary m-0" style={{ margin: 0 }}>
             <Icon path={mdiDebian} />
             Debian
           </a>
-          <a className="chip secondary m-0" style={{ margin: 0 }}>
+          <a target="_blank" href="https://aws.amazon.com/" className="chip secondary m-0" style={{ margin: 0 }}>
             <Icon path={mdiAws} />
             AWS
           </a>
-          <a className="chip secondary m-0" style={{ margin: 0 }}>
+          <a target="_blank" href="https://vercel.com/" className="chip secondary m-0" style={{ margin: 0 }}>
             <Icon className="p-1" path={mdiTriangle} />
             Vercel
           </a>
-          <a className="chip secondary m-0" style={{ margin: 0 }}>
+          <a target="_blank" href="https://jestjs.io/" className="chip secondary m-0" style={{ margin: 0 }}>
             <Icon path={mdiBug} />
             Jest
           </a>
-          <a className="chip secondary m-0" style={{ margin: 0 }}>
+          <a target="_blank" href="https://pestphp.com/" className="chip secondary m-0" style={{ margin: 0 }}>
             <Icon path={mdiBug} />
             Pest
           </a>
-          <a className="chip secondary m-0" style={{ margin: 0 }}>
+          <a target="_blank" href="https://www.framer.com/" className="chip secondary m-0" style={{ margin: 0 }}>
             <Icon path={mdiAnimationOutline} />
             Framer
           </a>
-          <a className="chip secondary m-0" style={{ margin: 0 }}>
+          <a target="_blank" href="https://git-scm.com/" className="chip secondary m-0" style={{ margin: 0 }}>
             <Icon path={mdiGit} />
             GIT
           </a>
-          <a className="chip secondary m-0" style={{ margin: 0 }}>
-
+          <a target="_blank" href="https://redux.js.org/" className="chip secondary m-0" style={{ margin: 0 }}>
             <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path d="M15.661 15.549a1.315 1.315 0 001.185-1.386 1.363 1.363 0 00-1.35-1.302h-.048a1.352 1.352 0 00-1.303 1.397c.024.379.179.687.391.911-.827 1.609-2.07 2.794-3.954 3.788-1.266.663-2.604.912-3.905.734-1.089-.153-1.94-.64-2.463-1.421-.78-1.185-.852-2.462-.201-3.74a5.597 5.597 0 011.658-1.931 7.88 7.88 0 01-.331-1.218c-3.506 2.51-3.148 5.942-2.084 7.564.794 1.184 2.415 1.941 4.19 1.941.474 0 .972-.035 1.457-.154 3.077-.592 5.409-2.438 6.747-5.16l.011-.023z" />
               <path d="M19.887 12.589c-1.834-2.154-4.533-3.337-7.611-3.337h-.403c-.2-.438-.661-.711-1.183-.711h-.036c-.744 0-1.325.64-1.301 1.385.023.71.627 1.302 1.35 1.302h.059a1.332 1.332 0 001.183-.828h.439c1.824 0 3.551.532 5.126 1.574 1.206.792 2.072 1.834 2.557 3.077.425 1.019.402 2.013-.035 2.843-.675 1.302-1.812 1.988-3.314 1.988-.947 0-1.871-.296-2.345-.509-.283.235-.758.626-1.102.863 1.042.473 2.096.746 3.113.746 2.309 0 4.023-1.302 4.676-2.557.709-1.422.651-3.813-1.161-5.859l-.012.023z" />
               <path d="M7.647 15.975c.023.71.626 1.302 1.35 1.302h.048a1.334 1.334 0 001.302-1.397c0-.71-.616-1.301-1.338-1.301h-.048c-.048 0-.118 0-.178.022-.982-1.657-1.397-3.434-1.242-5.349.094-1.445.567-2.7 1.42-3.742.71-.888 2.048-1.326 2.96-1.35 2.556-.048 3.622 3.138 3.704 4.404l1.184.354C16.536 5.036 14.122 3 11.813 3 9.647 3 7.647 4.574 6.842 6.884c-1.102 3.077-.379 6.036.971 8.404-.118.154-.189.426-.166.687z" />
-            </svg>            Redux
+            </svg>
+            Redux
           </a>
 
         </div>
