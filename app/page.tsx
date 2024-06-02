@@ -44,6 +44,14 @@ export default function Home() {
         <h1 className="large">Projects</h1>
         <Slider margin={20} width={'auto'} data={[
           <Project
+            brand={"Hooanime"}
+            tags={["NextJS", "ReactJS", "NextJS-13", "Next-SEO", "Crawling", "Streaming"]}
+            primary={"bg-[#e0edad]"} secondary={"#e0edad60"} img={"https://adenlall.vercel.app/projects/ar.hooanime/logo.png"}
+            cover="https://adenlall.vercel.app/projects/ar.hooanime/1.png"
+            href={"https://ar.hooanime.com/"}
+            title="Anime streaming platform crawling all data from various popular arabic anime websites"
+          />,
+          <Project
             brand={"AllAcc"}
             tags={["PHP", "Laravel", "React", "Inertia", "API", "AWS", "NGINX", "Platform"]}
             primary={"bg-[antiquewhite]"} secondary={"teal"} img="https://adenlall.vercel.app/projects/allacc/logo.png"
@@ -59,22 +67,6 @@ export default function Home() {
             cover="https://adenlall.vercel.app/projects/adestore/0.png"
             href={"https://adestore.vercel.app/"}
             title="e-commerce headless stores built with Nextjs 14 and shopify api, this store support cart and checkout"
-          />,
-          <Project
-            brand={"salatokgtk"}
-            tags={["Javascript", "GTK", "Linux", "Desktop"]}
-            primary={"bg-[teal]"} secondary={"#ffd556"} img="https://adenlall.vercel.app/projects/salatok-gtk/logo.svg"
-            cover="https://adenlall.vercel.app/projects/salatok-gtk/2.png"
-            href={"https://github.com/adenlall/salatok-gtk"}
-            title="Open source desktop application that provides offline prayer times and related features."
-          />,
-          <Project
-            brand={"Footymix"}
-            tags={["NextJS", "React", "PHP", "Laravel", "API", "AWS", "SEO", "GRAPHQL"]}
-            primary={"bg-[#ea156a70]"} secondary={"purple"} img={"https://adenlall.vercel.app//misc/logo.png"}
-            cover="https://adenlall.vercel.app/projects/footymix/1.png"
-            href={"https://neal-inspired-okdztawxu-adenlall.vercel.app/"}
-            title="Football Fixtures, Quizzes, Quotes and more. with high performence designed for large scale trafic"
           />,
           <Project
             brand={"adelist"}
@@ -93,13 +85,21 @@ export default function Home() {
             title="Open source web application that provides offline prayer times and quran reader and player" />
           ,
           <Project
-            brand={"Hooanime"}
-            tags={["NextJS", "ReactJS", "NextJS-13", "Next-SEO", "Crawling", "Streaming"]}
-            primary={"bg-[#e0edad]"} secondary={"#e0edad60"} img={"https://adenlall.vercel.app/projects/ar.hooanime/logo.png"}
-            cover="https://adenlall.vercel.app/projects/ar.hooanime/1.png"
-            href={"https://ar.hooanime.com/"}
-            title="Anime streaming platform crawling all data from various popular arabic anime websites"
-          />
+            brand={"salatokgtk"}
+            tags={["Javascript", "GTK", "Linux", "Desktop"]}
+            primary={"bg-[teal]"} secondary={"#ffd556"} img="https://adenlall.vercel.app/projects/salatok-gtk/logo.svg"
+            cover="https://adenlall.vercel.app/projects/salatok-gtk/2.png"
+            href={"https://github.com/adenlall/salatok-gtk"}
+            title="Open source desktop application that provides offline prayer times and related features."
+          />,
+          <Project
+            brand={"Footymix"}
+            tags={["NextJS", "React", "PHP", "Laravel", "API", "AWS", "SEO", "GRAPHQL"]}
+            primary={"bg-[#ea156a70]"} secondary={"purple"} img={"https://adenlall.vercel.app//misc/logo.png"}
+            cover="https://adenlall.vercel.app/projects/footymix/1.png"
+            href={"https://neal-inspired-okdztawxu-adenlall.vercel.app/"}
+            title="Football Fixtures, Quizzes, Quotes and more. with high performence designed for large scale trafic"
+          />,
         ]} />
       </div>
 
