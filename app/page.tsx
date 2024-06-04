@@ -2,6 +2,7 @@ import Current from "@/components/Current";
 import Project from "@/components/Project";
 import Slider from "@/components/Slider";
 import Steps from "@/components/Steps";
+import Venoroi from "@/components/Venoroi";
 import { mdiAnimationOutline, mdiAws, mdiBug, mdiDatabase, mdiDebian, mdiDebugStepInto, mdiDocker, mdiGit, mdiGraphql, mdiLanguagePhp, mdiLanguageTypescript, mdiLaptop, mdiLaptopAccount, mdiLaravel, mdiMaterialDesign, mdiNodejs, mdiPalette, mdiReact, mdiTailwind, mdiTriangle, mdiUnicode, mdiVuejs } from "@mdi/js";
 import Icon from "@mdi/react";
 
@@ -38,6 +39,14 @@ export default function Home() {
             </video>
           </article>
         </div>
+      </div>
+      <div className="container m-auto -mb-[5.5em] rounded-box">
+        <Venoroi height={400} />
+        <h2 style={{ top: 'calc(50% - 1.4em)', left: 'calc(50% - 1.7em)', fontSize: '5em' }} className="absolute font-extrabold">
+          <a target="_blank" className="p-0 m-0" href="mailto:adenlall@proton.me">
+            Hire me
+          </a>
+        </h2>
       </div>
       <Current />
       <div className="container tertiary-container rounded-box p-4 m-auto mt-0">
