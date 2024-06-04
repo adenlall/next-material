@@ -34,7 +34,7 @@ export type VoronoiProps = {
 };
 
 function Venoroi({ height, margin = defaultMargin }: VoronoiProps) {
-    const width = window.innerWidth
+    const width = window?.innerWidth??1900
     const innerWidth = width - margin.left - margin.right;
     const innerHeight = height - margin.top - margin.bottom;
 
