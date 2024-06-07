@@ -58,7 +58,7 @@ export default function Home() {
             primary={"bg-[#e0edad]"} secondary={"#e0edad60"} img={"https://adenlall.vercel.app/projects/ar.hooanime/logo.png"}
             cover="https://adenlall.vercel.app/projects/ar.hooanime/1.png"
             href={"https://ar.hooanime.com/"}
-            title="Anime streaming platform crawling all data from various popular arabic anime websites"
+            title="Anime streaming platform besed on crawling data. It has been updated to incorporate the latest React/Nextjs features, including streaming via Suspense and server actions."
           />,
           <Project
             brand={"AllAcc"}
