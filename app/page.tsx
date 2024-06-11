@@ -40,15 +40,14 @@ export default function Home() {
           </article>
         </div>
       </div>
-      <div className="container m-auto -mb-[5.5em] rounded-box">
-        <Venoroi height={400} />
-        <h2 style={{ top: 'calc(50% - 1.4em)', left: 'calc(50% - 1.7em)', fontSize: '5em' }} className="absolute font-extrabold">
-          <a target="_blank" className="p-0 m-0" href="mailto:adenlall@proton.me">
+      <div className="flex md:flex-row flex-col container m-auto gap-4 justify-center mb-4">
+        <a target="_blank" className="p-0 m-0 w-1/2 h-auto rounded-box tertiary flex items-center justify-center" href="mailto:adenlall@proton.me">
+          <h2 style={{ fontSize: '5em' }} className="font-extrabold">
             Hire me
-          </a>
-        </h2>
+          </h2>
+        </a>
+        <Current />
       </div>
-      <Current />
       <div className="container tertiary-container rounded-box p-4 m-auto mt-0">
         <h1 className="large">Projects</h1>
         <Slider margin={20} width={'auto'} data={[
@@ -58,7 +57,7 @@ export default function Home() {
             primary={"bg-[#e0edad]"} secondary={"#e0edad60"} img={"https://adenlall.vercel.app/projects/ar.hooanime/logo.png"}
             cover="https://adenlall.vercel.app/projects/ar.hooanime/1.png"
             href={"https://ar.hooanime.com/"}
-            title="Anime streaming platform besed on crawling data. It has been updated to incorporate the latest React/Nextjs features, including streaming via Suspense and server actions."
+            title="Anime streaming platform on edge runtime. It has been updated to the latest features, Suspense streaming and server actions."
           />,
           <Project
             brand={"AllAcc"}

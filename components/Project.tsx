@@ -22,7 +22,7 @@ export default function Project({
     tags?: Array<string>
 }) {
     return (
-        <article className="no-padding md:w-[20em] w-[17em] h-[30.5em] md:h-[33.5em]">
+        <article className="no-padding md:w-[20em] w-[17em] h-[32em] md:h-[33.5em]">
             {
                 img ? (
                     <img className={"responsive large " + primary + (padImage ? " p-4" : "")} src={img} />
