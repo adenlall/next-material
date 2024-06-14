@@ -70,7 +70,7 @@ export default function Home() {
           <Project
             brand={"adestore"}
             padImage={true}
-            tags={["e-commerce", "NextJS", "Next-14", "Shopify", "Headless", "Store"]}
+            tags={["e-commerce", "Nextjs", "Shopify", "Headless", "Store"]}
             primary={"bg-[#808000]"} secondary={"#808000"} img={"https://adenlall.vercel.app/projects/adestore/logo.svg"}
             cover="https://adenlall.vercel.app/projects/adestore/0.png"
             href={"https://adestore.vercel.app/"}
