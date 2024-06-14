@@ -1,5 +1,5 @@
 export default function Current() {
-    return <div className="w-1/2 h-auto rounded-box secondary-container flex flex-col gap-2 p-4">
+    return <div className="md:w-1/2 w-full h-auto rounded-box secondary-container flex flex-col gap-2 p-4">
         <div className="w-3 h-3 absolute top-5 right-5 secondary-container animate-ping"></div>
         <h2 className="m-0">Project In progress</h2>
         <p className="m-0 pl-4 ">

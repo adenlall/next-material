@@ -41,7 +41,7 @@ export default function Home() {
         </div>
       </div>
       <div className="flex md:flex-row flex-col container m-auto gap-4 justify-center mb-4">
-        <a target="_blank" className="p-0 m-0 w-1/2 h-auto rounded-box tertiary flex items-center justify-center" href="mailto:adenlall@proton.me">
+        <a target="_blank" className="p-0 m-0 md:w-1/2 w-full h-auto rounded-box tertiary flex items-center justify-center" href="mailto:adenlall@proton.me">
           <h2 style={{ fontSize: '5em' }} className="font-extrabold">
             Hire me
           </h2>
@@ -57,7 +57,7 @@ export default function Home() {
             primary={"bg-[#e0edad]"} secondary={"#e0edad60"} img={"https://adenlall.vercel.app/projects/ar.hooanime/logo.png"}
             cover="https://adenlall.vercel.app/projects/ar.hooanime/1.png"
             href={"https://ar.hooanime.com/"}
-            title="Anime streaming platform on edge runtime. It has been updated to the latest features, Suspense streaming and server actions."
+            title="Anime streaming platform on edge runtime. It has been updated to the latest features, Suspense streaming and server actions with WPA support."
           />,
           <Project
             brand={"AllAcc"}
@@ -65,7 +65,7 @@ export default function Home() {
             primary={"bg-[antiquewhite]"} secondary={"teal"} img="https://adenlall.vercel.app/projects/allacc/logo.png"
             cover="https://adenlall.vercel.app/projects/allacc/1.png"
             href={"https://github.com/adenlall/Allacc.tk"}
-            title="Open source Linktree-like platform with customization tweaks and analytic system integrated"
+            title="Open source fully featured Linktree-like platform with customization tweaks and analytic system integrated"
           />,
           <Project
             brand={"adestore"}
@@ -74,7 +74,7 @@ export default function Home() {
             primary={"bg-[#808000]"} secondary={"#808000"} img={"https://adenlall.vercel.app/projects/adestore/logo.svg"}
             cover="https://adenlall.vercel.app/projects/adestore/0.png"
             href={"https://adestore.vercel.app/"}
-            title="e-commerce headless stores built with Nextjs 14 and shopify api, this store support cart and checkout"
+            title="e-commerce headless stores built with Nextjs, shopify api and prisma, this store support cart and checkout"
           />,
           <Project
             brand={"adelist"}
@@ -82,7 +82,7 @@ export default function Home() {
             primary={"bg-[#280b0b]"} secondary={"orange"} img={"https://adenlall.vercel.app/projects/adelist/logo.svg"}
             cover="https://adenlall.vercel.app/projects/adelist/1.png"
             href={"https://github.com/adenlall/adelist/"}
-            title="A React Native Anilist clien for IOS and Android with full features"
+            title="A React Native Anilist clien for IOS and Android with authentication system"
           />,
           <Project
             brand={"salatok"}
