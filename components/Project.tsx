@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Project({
     img,
     title,
@@ -8,7 +10,9 @@ export default function Project({
     primary,
     brand,
     padImage,
-    secondary
+    secondary,
+    button,
+    target
 }: {
     href?: string,
     img?: string;
@@ -20,6 +24,8 @@ export default function Project({
     padImage?: boolean;
     brand?: string
     tags?: Array<string>
+    button?:string 
+    target?:string 
 }) {
     return (
         <article className="no-padding md:w-[20em] w-[17em] h-[32em] md:h-[33.5em]">
@@ -48,9 +54,9 @@ export default function Project({
                     <p className="text-xs md:my-2 my-0">{title}</p>
                 </div>
                 <nav className="">
-                    <a href={href ?? "/"} target="_blank">
-                        <button style={{margin:0}} className="button primary">Visit</button>
-                    </a>
+                    <Link href={href ?? "/"} target={target??"_blank"}>
+                        <button style={{margin:0}} className="button primary">{button??"GitHub"}</button>
+                    </Link>
                 </nav>
             </div>
         </article>

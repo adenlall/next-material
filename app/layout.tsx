@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Roboto } from "next/font/google";
 import "./globals.css";
 
 import "beercss";
 import "material-dynamic-colors";
 import Theme from "@/components/Theme";
 import Modal from "@/components/Modal";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
+const robots = Roboto({weight:'400', subsets: ["latin"] });
 
 
 export const viewport = {
@@ -104,11 +106,11 @@ export default function RootLayout({
         <script type="module" src="https://cdn.jsdelivr.net/npm/beercss@3.5.6/dist/cdn/beer.min.js"></script>
         <script type="module" src="https://cdn.jsdelivr.net/npm/material-dynamic-colors@1.1.0/dist/cdn/material-dynamic-colors.min.js"></script>
       </head>
-      <body className={"min-h-screen surface-container-low " + inter.className}>
+      <body className={"min-h-screen surface-container-low " + robots.className}>
         <Modal />
         <div className="flex flex-col items-center justify-between container m-auto pt-10">
           <nav className="w-full md:flex-row flex-col items-center justify-between flex">
-            <h1 className="meduim">janah bilal</h1>
+            <h1 className="meduim"><Link href="/">janah bilal</Link></h1>
             <div className="flex sm:flex-row sm:gap-0 gap-2 flex-col justify-center items-center">
               <div>
                 <Theme />

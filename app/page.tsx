@@ -2,14 +2,11 @@ import Current from "@/components/Current";
 import Project from "@/components/Project";
 import Slider from "@/components/Slider";
 import Steps from "@/components/Steps";
-import Venoroi from "@/components/Venoroi";
-import { mdiAnimationOutline, mdiAws, mdiBug, mdiDatabase, mdiDebian, mdiDebugStepInto, mdiDocker, mdiGit, mdiGraphql, mdiLanguagePhp, mdiLanguageTypescript, mdiLaptop, mdiLaptopAccount, mdiLaravel, mdiMaterialDesign, mdiNodejs, mdiPalette, mdiReact, mdiTailwind, mdiTriangle, mdiUnicode, mdiVuejs } from "@mdi/js";
 import Icon from "@mdi/react";
-
+import { mdiAnimationOutline, mdiAws, mdiBug, mdiDebian, mdiDocker, mdiGit, mdiGraphql, mdiLanguagePhp, mdiLanguageTypescript, mdiLaptop, mdiLaravel, mdiMaterialDesign, mdiNodejs, mdiPalette, mdiReact, mdiTailwind, mdiTriangle, mdiVuejs } from "@mdi/js";
 
 import "beercss";
 import "material-dynamic-colors";
-
 
 export default function Home() {
   return (
@@ -52,12 +49,23 @@ export default function Home() {
         <h1 className="large">Projects</h1>
         <Slider margin={20} width={'auto'} data={[
           <Project
+            target="_self"
+            brand={"Travelo"}
+            button="Project Description"
+            tags={["GraphQL", "Realy", "Nextjs"]}
+            primary={"bg-[#3a5948]"} img={"https://adenlall.vercel.app/projects/travelo/logo.png"}
+            cover="https://adenlall.vercel.app/projects/ar.hooanime/1.png"
+            href={"/projects/travelo"}
+            title="Travelo It allows users to explore destinations together, and gain insider knowledge from local experts."
+          />,
+          <Project
+            button="Visit"
             brand={"Hooanime"}
-            tags={["NextJS", "ReactJS", "NextJS-13", "Next-SEO", "Crawling", "Streaming"]}
+            tags={["Nextjs", "ReactJS", "Nextjs-13", "Next-SEO", "Crawling", "Streaming"]}
             primary={"bg-[#e0edad]"} secondary={"#e0edad60"} img={"https://adenlall.vercel.app/projects/ar.hooanime/logo.png"}
             cover="https://adenlall.vercel.app/projects/ar.hooanime/1.png"
             href={"https://ar.hooanime.com/"}
-            title="Anime streaming platform on edge runtime. It has been updated to the latest features, Suspense streaming and server actions with WPA support."
+            title="Anime streaming platform. with Suspense streaming and server actions with WPA support."
           />,
           <Project
             brand={"AllAcc"}
@@ -86,6 +94,7 @@ export default function Home() {
           />,
           <Project
             brand={"salatok"}
+            button="Visit"
             tags={["React", "Javascript", "TailwindCss", "DaisyUI", "SEO"]}
             primary={"bg-[#1fc5ed40]"} secondary={"#1fc5ed40"} img={"https://adenlall.vercel.app/projects/salatok/logo.png"}
             cover="https://adenlall.vercel.app/projects/salatok/1.png"
@@ -94,6 +103,7 @@ export default function Home() {
           ,
           <Project
             brand={"salatokgtk"}
+            button="Download - FlatHub"
             tags={["Javascript", "GTK", "Linux", "Desktop"]}
             primary={"bg-[teal]"} secondary={"#ffd556"} img="https://adenlall.vercel.app/projects/salatok-gtk/logo.svg"
             cover="https://adenlall.vercel.app/projects/salatok-gtk/2.png"
@@ -102,7 +112,8 @@ export default function Home() {
           />,
           <Project
             brand={"Footymix"}
-            tags={["NextJS", "React", "PHP", "Laravel", "API", "AWS", "SEO", "GRAPHQL"]}
+            button="Visit"
+            tags={["Nextjs", "React", "PHP", "Laravel", "API", "AWS", "SEO", "GRAPHQL"]}
             primary={"bg-[#ea156a70]"} secondary={"purple"} img={"https://adenlall.vercel.app//misc/logo.png"}
             cover="https://adenlall.vercel.app/projects/footymix/1.png"
             href={"https://neal-inspired-okdztawxu-adenlall.vercel.app/"}
