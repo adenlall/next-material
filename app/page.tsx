@@ -62,7 +62,7 @@ export default function Home() {
               brand={"Travelo"}
               button="Project Description"
               tags={["GraphQL", "Realy", "Nextjs"]}
-              primary={"bg-[#3a5948]"} img={"https://adenlall.vercel.app/projects/travelo/logo.png"}
+              primary={"bg-[#d9ebe4]"} img={"https://adenlall.vercel.app/projects/travelo/logo.png"}
               cover="https://adenlall.vercel.app/projects/ar.hooanime/1.png"
               href={"/projects/travelo"}
               title="Travelo It allows users to explore destinations together, and gain insider knowledge from local experts."
