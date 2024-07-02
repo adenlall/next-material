@@ -49,16 +49,6 @@ export default function Home() {
         <h1 className="large">Projects</h1>
         <Slider margin={20} width={'auto'} data={[
           <Project
-            target="_self"
-            brand={"Travelo"}
-            button="Project Description"
-            tags={["GraphQL", "Realy", "Nextjs"]}
-            primary={"bg-[#3a5948]"} img={"https://adenlall.vercel.app/projects/travelo/logo.png"}
-            cover="https://adenlall.vercel.app/projects/ar.hooanime/1.png"
-            href={"/projects/travelo"}
-            title="Travelo It allows users to explore destinations together, and gain insider knowledge from local experts."
-          />,
-          <Project
             button="Visit"
             brand={"Hooanime"}
             tags={["Nextjs", "ReactJS", "Nextjs-13", "Next-SEO", "Crawling", "Streaming"]}
@@ -68,12 +58,31 @@ export default function Home() {
             title="Anime streaming platform. with Suspense streaming and server actions with WPA support."
           />,
           <Project
+              target="_self"
+              brand={"Travelo"}
+              button="Project Description"
+              tags={["GraphQL", "Realy", "Nextjs"]}
+              primary={"bg-[#3a5948]"} img={"https://adenlall.vercel.app/projects/travelo/logo.png"}
+              cover="https://adenlall.vercel.app/projects/ar.hooanime/1.png"
+              href={"/projects/travelo"}
+              title="Travelo It allows users to explore destinations together, and gain insider knowledge from local experts."
+          />,
+          <Project
             brand={"AllAcc"}
             tags={["PHP", "Laravel", "React", "Inertia", "API", "AWS", "NGINX", "Platform"]}
             primary={"bg-[antiquewhite]"} secondary={"teal"} img="https://adenlall.vercel.app/projects/allacc/logo.png"
             cover="https://adenlall.vercel.app/projects/allacc/1.png"
             href={"https://github.com/adenlall/Allacc.tk"}
             title="Open source fully featured Linktree-like platform with customization tweaks and analytic system integrated"
+          />,
+          <Project
+              brand={"Footymix"}
+              button="Visit"
+              tags={["Nextjs", "API", "Laravel", "AWS", "SEO", "GRAPHQL"]}
+              primary={"bg-[#ea156a70]"} secondary={"purple"} img={"https://adenlall.vercel.app//misc/logo.png"}
+              cover="https://adenlall.vercel.app/projects/footymix/1.png"
+              href={"https://neal-inspired-okdztawxu-adenlall.vercel.app/"}
+              title="Football Fixtures, Quizzes, Quotes and more. with high performence designed for large scale trafic"
           />,
           <Project
             brand={"adestore"}
@@ -109,15 +118,6 @@ export default function Home() {
             cover="https://adenlall.vercel.app/projects/salatok-gtk/2.png"
             href={"https://github.com/adenlall/salatok-gtk"}
             title="Open source desktop application that provides offline prayer times and related features."
-          />,
-          <Project
-            brand={"Footymix"}
-            button="Visit"
-            tags={["Nextjs", "React", "PHP", "Laravel", "API", "AWS", "SEO", "GRAPHQL"]}
-            primary={"bg-[#ea156a70]"} secondary={"purple"} img={"https://adenlall.vercel.app//misc/logo.png"}
-            cover="https://adenlall.vercel.app/projects/footymix/1.png"
-            href={"https://neal-inspired-okdztawxu-adenlall.vercel.app/"}
-            title="Football Fixtures, Quizzes, Quotes and more. with high performence designed for large scale trafic"
           />,
         ]} />
       </div>
