@@ -7,6 +7,8 @@ import { mdiAnimationOutline, mdiAws, mdiBug, mdiDebian, mdiDocker, mdiGit, mdiG
 
 import "beercss";
 import "material-dynamic-colors";
+import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -43,85 +45,35 @@ export default function Home() {
             Hire me
           </h2>
         </a>
-        
         <Current />
       </div>
-      <div className="container tertiary-container rounded-box p-4 m-auto mt-0">
-        <h1 className="large">Projects</h1>
-        <Slider margin={20} width={'auto'} data={[
-          <Project
-            button="Visit"
-            brand={"Hooanime"}
-            tags={["Nextjs", "ReactJS", "Nextjs-13", "Next-SEO", "Crawling", "Streaming"]}
-            primary={"bg-[#e0edad]"} secondary={"#e0edad60"} img={"https://adenlall.vercel.app/projects/ar.hooanime/logo.png"}
-            cover="https://adenlall.vercel.app/projects/ar.hooanime/1.png"
-            href={"https://ar.hooanime.com/"}
-            title="Anime streaming platform. with Suspense streaming and server actions with WPA support."
-          />,
-          <Project
-              target="_self"
-              brand={"Travelo"}
-              button="Project Description"
-              tags={["GraphQL", "Realy", "Nextjs"]}
-              primary={"bg-[#d9ebe4]"} img={"https://adenlall.vercel.app/projects/travelo/logo.png"}
-              cover="https://adenlall.vercel.app/projects/ar.hooanime/1.png"
-              href={"/projects/travelo"}
-              title="Travelo It allows users to explore destinations together, and gain insider knowledge from local experts."
-          />,
-          <Project
-            brand={"AllAcc"}
-            tags={["PHP", "Laravel", "React", "Inertia", "API", "AWS", "NGINX", "Platform"]}
-            primary={"bg-[antiquewhite]"} secondary={"teal"} img="https://adenlall.vercel.app/projects/allacc/logo.png"
-            cover="https://adenlall.vercel.app/projects/allacc/1.png"
-            href={"https://github.com/adenlall/Allacc.tk"}
-            title="Open source fully featured Linktree-like platform with customization tweaks and analytic system integrated"
-          />,
-          <Project
-              brand={"Footymix"}
-              button="Visit"
-              tags={["Nextjs", "API", "Laravel", "AWS", "SEO", "GRAPHQL"]}
-              primary={"bg-[#ea156a70]"} secondary={"purple"} img={"https://adenlall.vercel.app//misc/logo.png"}
-              cover="https://adenlall.vercel.app/projects/footymix/1.png"
-              href={"https://neal-inspired-okdztawxu-adenlall.vercel.app/"}
-              title="Football Fixtures, Quizzes, Quotes and more. with high performence designed for large scale trafic"
-          />,
-          <Project
-            brand={"adestore"}
-            padImage={true}
-            tags={["e-commerce", "Nextjs", "Shopify", "Headless", "Store"]}
-            primary={"bg-[#808000]"} secondary={"#808000"} img={"https://adenlall.vercel.app/projects/adestore/logo.svg"}
-            cover="https://adenlall.vercel.app/projects/adestore/0.png"
-            href={"https://adestore.vercel.app/"}
-            title="e-commerce headless stores built with Nextjs, shopify api and prisma, this store support cart and checkout"
-          />,
-          <Project
-            brand={"adelist"}
-            tags={["React", "Native", "IOS", "Android", "GRAPHQL"]}
-            primary={"bg-[#280b0b]"} secondary={"orange"} img={"https://adenlall.vercel.app/projects/adelist/logo.svg"}
-            cover="https://adenlall.vercel.app/projects/adelist/1.png"
-            href={"https://github.com/adenlall/adelist/"}
-            title="A React Native Anilist clien for IOS and Android with authentication system"
-          />,
-          <Project
-            brand={"salatok"}
-            button="Visit"
-            tags={["React", "Javascript", "TailwindCss", "DaisyUI", "SEO"]}
-            primary={"bg-[#1fc5ed40]"} secondary={"#1fc5ed40"} img={"https://adenlall.vercel.app/projects/salatok/logo.png"}
-            cover="https://adenlall.vercel.app/projects/salatok/1.png"
-            href={"https://github.com/adenlall/salatok/"}
-            title="Open source web application that provides offline prayer times and quran reader and player" />
-          ,
-          <Project
-            brand={"salatokgtk"}
-            button="Download - FlatHub"
-            tags={["Javascript", "GTK", "Linux", "Desktop"]}
-            primary={"bg-[teal]"} secondary={"#ffd556"} img="https://adenlall.vercel.app/projects/salatok-gtk/logo.svg"
-            cover="https://adenlall.vercel.app/projects/salatok-gtk/2.png"
-            href={"https://github.com/adenlall/salatok-gtk"}
-            title="Open source desktop application that provides offline prayer times and related features."
-          />,
-        ]} />
+
+      <div className="container h-[30em] m-auto my-4 secondary-container rounded-box">
+        <div className="w-full h-full secondary-container rounded-box">
+          <video className={"object-cover w-full h-full secondary-container rounded-box"} src="/movie.mp4" autoPlay loop />
+          <div className="w-full h-full absolute top-0 rounded-xl" style={{ background: 'linear-gradient(var(--primary-container), #0000)' }} />
+          <div className="absolute flex items-center gap-2 top-0 p-4 primary-text">
+            <Image alt="logo"
+              src={"/projects/travelos/logo.png"}
+              width={50} height={50}
+            />
+            <span className="text-4xl font-extrabold">the new trip experience</span>
+          </div>
+          <div className="absolute top-[82%] w-full flex items-center justify-center">
+            <Link target="_blank" href={"https://travelos.vercel.app/api/graphql"} className="button extra" style={{ background: "transparent", backdropFilter: 'blur(11px)' }}>Check Out</Link>
+            <Link target="_blank" href="https://travelos.vercel.app/api/graphql"
+              className="button secondary extra m-0" style={{ margin: 0, padding: 0 }}>
+              <Icon path={mdiGraphql} />
+            </Link>
+          </div>
+        </div>
       </div>
+
+
+
+      <ProfessionalProjects />
+      <div className="my-4" />
+      <SideProjects />
 
       <div className="w-full container m-auto">
         <div className="secondary-container md:h-[15em] h-auto px-8 my-4 mb-8 flex flex-col items-center justify-center rounded-box">
@@ -265,5 +217,101 @@ export default function Home() {
       </div>
 
     </main >
-  );
+  )
+}
+
+function ProfessionalProjects() {
+  return <div className="container tertiary-container rounded-box p-4 m-auto mt-0">
+    <h1 className="large">Professional Projects</h1>
+    <Slider margin={20} width={'auto'} data={[
+      <Project
+        button="Visit"
+        brand={"Hooanime"}
+        tags={["Nextjs", "ReactJS", "Nextjs-13", "Next-SEO", "Crawling", "Streaming"]}
+        primary={"bg-[#e0edad]"} secondary={"#e0edad60"} img={"https://adenlall.vercel.app/projects/ar.hooanime/logo.png"}
+        cover="https://adenlall.vercel.app/projects/ar.hooanime/1.png"
+        href={"https://ar.hooanime.com/"}
+        title="Anime streaming platform. with Suspense streaming and server actions with WPA support."
+      />,
+      <Project
+        target="_self"
+        brand={"Travelos"}
+        button="Project Description"
+        tags={["GraphQL", "Realy", "Nextjs"]}
+        primary={"bg-[#d9ebe4]"} img={"https://adenlall.vercel.app/projects/travelo/logo.png"}
+        cover="https://adenlall.vercel.app/projects/ar.hooanime/1.png"
+        href={"/projects/travelos"}
+        title="Travelos It allows users to explore destinations together, and gain insider knowledge from local experts."
+      />,
+      <Project
+        brand={"AllAcc"}
+        tags={["PHP", "Laravel", "React", "Inertia", "API", "AWS", "NGINX", "Platform"]}
+        primary={"bg-[antiquewhite]"} secondary={"teal"} img="https://adenlall.vercel.app/projects/allacc/logo.png"
+        cover="https://adenlall.vercel.app/projects/allacc/1.png"
+        href={"https://github.com/adenlall/Allacc.tk"}
+        title="Open source fully featured Linktree-like platform with customization tweaks and analytic system integrated"
+      />,
+      <Project
+        brand={"Footymix"}
+        button="Visit"
+        tags={["Nextjs", "API", "Laravel", "AWS", "SEO", "GRAPHQL"]}
+        primary={"bg-[#ea156a70]"} secondary={"purple"} img={"https://adenlall.vercel.app//misc/logo.png"}
+        cover="https://adenlall.vercel.app/projects/footymix/1.png"
+        href={"https://neal-inspired-okdztawxu-adenlall.vercel.app/"}
+        title="Football Fixtures, Quizzes, Quotes and more. with high performence designed for large scale trafic"
+      />,
+      <Project
+        brand={"adelist"}
+        tags={["React", "Native", "IOS", "Android", "GRAPHQL"]}
+        primary={"bg-[#280b0b]"} secondary={"orange"} img={"https://adenlall.vercel.app/projects/adelist/logo.svg"}
+        cover="https://adenlall.vercel.app/projects/adelist/1.png"
+        href={"https://github.com/adenlall/adelist/"}
+        title="A React Native Anilist clien for IOS and Android with authentication system"
+      />,
+      <Project
+        brand={"salatok"}
+        button="Visit"
+        tags={["React", "Javascript", "TailwindCss", "DaisyUI", "SEO"]}
+        primary={"bg-[#1fc5ed40]"} secondary={"#1fc5ed40"} img={"https://adenlall.vercel.app/projects/salatok/logo.png"}
+        cover="https://adenlall.vercel.app/projects/salatok/1.png"
+        href={"https://github.com/adenlall/salatok/"}
+        title="Open source web application that provides offline prayer times and quran reader and player" />
+    ]} />
+  </div>
+}
+
+
+function SideProjects() {
+  return <div className="container primary-container rounded-box p-4 m-auto mt-0">
+    <h1 className="large">Side Projects</h1>
+    <Slider margin={20} width={'auto'} data={[
+      <Project
+        brand={"adestore"}
+        padImage={true}
+        tags={["e-commerce", "Nextjs", "Shopify", "Headless", "Store"]}
+        primary={"bg-[#808000]"} secondary={"#808000"} img={"https://adenlall.vercel.app/projects/adestore/logo.svg"}
+        cover="https://adenlall.vercel.app/projects/adestore/0.png"
+        href={"https://adestore.vercel.app/"}
+        title="e-commerce headless stores built with Nextjs, shopify api and prisma, this store support cart and checkout"
+      />,
+      <Project
+        brand={"salatokgtk"}
+        button="Download - FlatHub"
+        tags={["Javascript", "GTK", "Linux", "Desktop"]}
+        primary={"bg-[teal]"} secondary={"#ffd556"} img="https://adenlall.vercel.app/projects/salatok-gtk/logo.svg"
+        cover="https://adenlall.vercel.app/projects/salatok-gtk/2.png"
+        href={"https://github.com/adenlall/salatok-gtk"}
+        title="Open source desktop application that provides offline prayer times and related features."
+      />,
+      <Project
+        brand={"bird game"}
+        button="Play"
+        tags={["Game", "Javascript", "Fun"]}
+        primary={"bg-[#242938]"} img="/projects/bird/logo.svg"
+        cover="/projects/bird/0.png"
+        href={"https://bird-game-janah-bilal.vercel.app/"}
+        title="The famous bird game with more extra features. The goal is to achieve the highest score possible."
+      />,
+    ]} />
+  </div>
 }
