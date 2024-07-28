@@ -83,7 +83,7 @@ export default function Home() {
 
             <div className="container h-[30em] m-auto my-4 secondary-container rounded-box">
                 <div className="w-full h-full secondary-container rounded-box">
-                    <video className={"object-cover w-full h-full secondary-container rounded-box"} src="/movie.mp4" autoPlay loop />
+                    <video className={"object-cover w-full h-full secondary-container rounded-box"} src="https://raw.githubusercontent.com/adenlall/next-material-design-3/main/public/movie.mp4" autoPlay loop />
                     <div className="w-full h-full absolute top-0 rounded-xl" style={{ background: 'linear-gradient(var(--primary-container), #0000)' }} />
                     <div className="absolute flex items-center gap-2 top-0 p-4 primary-text">
                         <Image alt="logo"
