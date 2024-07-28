@@ -43,6 +43,7 @@ export default function Home() {
             Hire me
           </h2>
         </a>
+        
         <Current />
       </div>
       <div className="container tertiary-container rounded-box p-4 m-auto mt-0">
