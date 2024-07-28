@@ -54,7 +54,7 @@ export default function Home() {
           <div className="w-full h-full absolute top-0 rounded-xl" style={{ background: 'linear-gradient(var(--primary-container), #0000)' }} />
           <div className="absolute flex items-center gap-2 top-0 p-4 primary-text">
             <Image alt="logo"
-              src={"/projects/travelos/logo.png"}
+              src={"/projects/travelo/logo.png"}
               width={50} height={50}
             />
             <span className="text-4xl font-extrabold">the new trip experience</span>
