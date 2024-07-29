@@ -9,6 +9,7 @@ import "beercss";
 import "material-dynamic-colors";
 import Link from "next/link";
 import Image from "next/image";
+import Travelos from "@/components/Travelos";
 
 export default function Home() {
   return (
@@ -48,28 +49,7 @@ export default function Home() {
         <Current />
       </div>
 
-      <div className="container h-[30em] m-auto my-4 secondary-container rounded-box">
-        <div className="w-full h-full secondary-container rounded-box">
-          <video className={"object-cover w-full h-full secondary-container rounded-box"} src="https://raw.githubusercontent.com/adenlall/next-material-design-3/main/public/movie.mp4" autoPlay loop />
-          <div className="w-full h-full absolute top-0 rounded-xl" style={{ background: 'linear-gradient(var(--primary-container), #0000)' }} />
-          <div className="absolute flex items-center gap-2 top-0 p-4 primary-text">
-            <Image alt="logo"
-              src={"/projects/travelo/logo.png"}
-              width={50} height={50}
-            />
-            <span className="text-4xl font-extrabold">the new trip experience</span>
-          </div>
-          <div className="absolute top-[82%] w-full flex items-center justify-center">
-            <Link target="_blank" href={"https://travelos.vercel.app/api/graphql"} className="button extra" style={{ background: "transparent", backdropFilter: 'blur(11px)' }}>Check Out</Link>
-            <Link target="_blank" href="https://travelos.vercel.app/api/graphql"
-              className="button secondary extra m-0" style={{ margin: 0, padding: 0 }}>
-              <Icon path={mdiGraphql} />
-            </Link>
-          </div>
-        </div>
-      </div>
-
-
+      <Travelos/>
 
       <ProfessionalProjects />
       <div className="my-4" />
