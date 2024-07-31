@@ -19,10 +19,10 @@ export default function Home() {
                             </p>
                             {/* <div className="space"></div> */}
                             <nav className="md:m-0 m-auto">
-                                <a target="_blank" href="https://github.com/adenlall/travelos">
+                                <a target="_blank" href="https://travelos.vercel.app/">
                                     <button className="button tertiary">
                                         <Icon path={mdiGithub} />
-                                        GitHub Page
+                                        Demo
                                     </button>
                                 </a>
                             </nav>
