@@ -7,8 +7,6 @@ import { mdiAnimationOutline, mdiAws, mdiBug, mdiDebian, mdiDocker, mdiGit, mdiG
 
 import "beercss";
 import "material-dynamic-colors";
-import Link from "next/link";
-import Image from "next/image";
 import Travelos from "@/components/Travelos";
 
 export default function Home() {
@@ -23,7 +21,7 @@ export default function Home() {
               <p className="md:w-fit md:text-start">Years of experience in developing full-stack solutions using the most popular and up-to-date technologies.</p>
               <div className="space"></div>
               <nav className="md:m-0 m-auto">
-                <a target="_blank" href="https://adenlall.vercel.app/resume-adenlall.pdf">
+                <a target="_blank" href="/janahbilal-fullstack-resume.pdf">
                   <button className="button tertiary">
                     <i>download</i>
                     download my resume
@@ -41,7 +39,7 @@ export default function Home() {
         </div>
       </div>
       <div className="flex md:flex-row flex-col container m-auto gap-4 justify-center mb-4">
-        <a target="_blank" className="p-0 m-0 md:w-1/2 w-full h-auto rounded-box tertiary flex items-center justify-center" href="mailto:adenlall@proton.me">
+        <a target="_blank" className="p-0 m-0 md:w-1/2 w-full h-auto rounded-box tertiary flex items-center justify-center" href="mailto:me@janah.pro">
           <h2 style={{ fontSize: '5em' }} className="font-extrabold">
             Hire me
           </h2>
