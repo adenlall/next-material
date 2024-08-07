@@ -203,13 +203,14 @@ function ProfessionalProjects() {
     <h1 className="large">Professional Projects</h1>
     <Slider margin={20} width={'auto'} data={[
       <Project
-        button="Visit"
+        target="_self"
+        button="Project Description"
         brand={"Hooanime"}
-        tags={["Nextjs", "ReactJS", "Nextjs-13", "Next-SEO", "Crawling", "Streaming"]}
+        tags={["Nextjs", "React", "PWA", "SEO", "Crawling"]}
         primary={"bg-[#e0edad]"} secondary={"#e0edad60"} img={"https://adenlall.vercel.app/projects/ar.hooanime/logo.png"}
         cover="https://adenlall.vercel.app/projects/ar.hooanime/1.png"
-        href={"https://ar.hooanime.com/"}
-        title="Anime streaming platform. with Suspense streaming and server actions with WPA support."
+        href={"/projects/hooanime"}
+        title="Anime streaming platform, SSR with PWA and half offline support."
       />,
       <Project
         target="_self"
@@ -266,7 +267,7 @@ function SideProjects() {
       <Project
         brand={"adestore"}
         padImage={true}
-        tags={["e-commerce", "Nextjs", "Shopify", "Headless", "Store"]}
+        tags={["commerce", "Nextjs", "Shopify", "Headless", "Store"]}
         primary={"bg-[#808000]"} secondary={"#808000"} img={"https://adenlall.vercel.app/projects/adestore/logo.svg"}
         cover="https://adenlall.vercel.app/projects/adestore/0.png"
         href={"https://adestore.vercel.app/"}
