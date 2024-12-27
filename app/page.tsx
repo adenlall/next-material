@@ -39,15 +39,15 @@ export default function Home() {
         </div>
       </div>
       <div className="flex md:flex-row flex-col container m-auto gap-4 justify-center mb-4">
-        <a target="_blank" className="p-0 m-0 md:w-1/2 w-full h-auto rounded-box tertiary flex items-center justify-center" href="mailto:me@janah.pro">
+        <a target="_blank" className="p-0 py-12 m-0 w-full h-auto rounded-box tertiary flex items-center justify-center" href="mailto:me@janah.pro">
           <h2 style={{ fontSize: '5em' }} className="font-extrabold">
             Hire me
           </h2>
         </a>
-        <Current />
+        {/* <Current /> */}
       </div>
 
-      <Travelos/>
+      <Travelos />
 
       <ProfessionalProjects />
       <div className="my-4" />
